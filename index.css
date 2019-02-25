@@ -2,8 +2,12 @@
     box-sizing: border-box;
 }
 
+html,
 body {
-    background: lightblue
+    background: lightblue;
+    height: 100%;
+    width: 100%;
+
 }
 
 #title {
@@ -17,36 +21,62 @@ body {
 
 #survey-form {
     display: inline-block;
-    text-align: right;
+    /* text-align: right; */
     margin-right: auto;
     margin-left: auto;
     width: 50%;
-    background: white;
+
     padding: 1em 0 1em 0;
 }
 
 
 #alignmentdiv {
     display: block;
-    text-align: center
+    text-align: center;
+    background: white;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    text-align: center;
 }
 
-input {
-    padding-right: 5em;
-    width: 50%
+.label {
+    float: left;
+    text-align: right;
+    width: 45%;
+
+
 }
 
-select {
-    padding-right: 5em;
-    width: 50%
+#number,
+#email,
+#name {
+    width: 100%
 }
+
+.input {
+    float: left;
+    width: 45%;
+    text-align: left;
+    margin-left: .5em;
+
+}
+
+
 
 ul {
     list-style: none;
+    padding: 0
 }
 
 li {
-    margin: 1em 0 1em 0;
-    padding-right: 33%;
+    /* margin: 1em 0 1em 0; */
+    padding: 1.5em 0 1.5em 0;
 
+
+}
+
+button {
+    position: relative;
+    margin: 2em 0 0 1em;
 }

@@ -23,40 +23,82 @@
 
             <ul>
                 <li>
-                    <label id="name-label" for="name">Name:</label>
-                    <input id="name" type="text" required placeholder="Enter your name">
+                    <div class="label">
+                        <label id="name-label" for="name">Name:</label>
+                    </div>
+                    <div class="input">
+                        <input id="name" type="text" required placeholder="Enter your name">
+                    </div>
+
                 </li>
                 <li>
-                    <label id="email-label" for="email">Email:</label>
-                    <input id="email" type="email" required placeholder="Enter your Email">
+                    <div class="label">
+                        <label id="email-label" for="email">Email:</label>
+                    </div>
+                    <div class="input">
+                        <input id="email" type="email" required placeholder="Enter your Email">
+                    </div>
                 </li>
                 <li>
-                    <label id="number-label" for="age">Age:</label>
-                    <input id="number" type="number" min="0" max="100" required placeholder="Enter your Age">
+                    <div class="label">
+                        <label id="number-label" for="age">Age:</label>
+                    </div>
+                    <div class="input">
+                        <input id="number" type="number" min="0" max="100" required placeholder="Enter your Age">
+                    </div>
                 </li>
                 <li>
-                    <label id="dropdown-label" for="dropdown">Rate your experience:</label>
-                    <select id="dropdown" type="dropdown" required placeholder="Rate your experience">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
+                    <div class="label">
+                        <label id="dropdown-label" for="dropdown">Rate your experience:</label>
+                    </div>
+                    <div class="input">
+                        <select id="dropdown" type="dropdown" required placeholder="Rate your experience">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
                 </li>
                 <li>
-                    <label for="radio-buttons">What product did you buy?</label>
-                    <input type="radio" name="product" value="woodwave">WoodWave<br>
-                    <input type="radio" name="product" value="woodwave-universal">WoodWave Universal<br>
-                    <input type="radio" name="product" value="knifeRack">Knife Rack
+                    <div class="label">
+                        <label for="radio-buttons">What product did you buy?</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" name="product" value="woodwave">WoodWave<br>
+                        <input type="radio" name="product" value="woodwave-universal">WoodWave Universal<br>
+                        <input type="radio" name="product" value="knifeRack">Knife Rack
+                    </div>
+                </li>
+                <li>
+                    <div class="label">
+                        <label for="checkbox">What do you like about your product?</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" value="Design">Design<br>
+                        <input type="checkbox" value="Material">Material<br>
+                        <input type="checkbox" value="Functionality">Functionality<br>
+                        <input type="checkbox" value="Whole Package">Whole Package<br>
+                    </div>
+                </li>
+                <li>
+                    <div class="label">
+                        <label for="textarea">Do you have any questions or comments?</label>
+                    </div>
+                    <div class="input">
+                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    </div>
                 </li>
 
             </ul>
 
 
-
+            <button id="submit" type="submit" form="survey-form" value="submit">Submit</button>
 
         </form>
+
+
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
